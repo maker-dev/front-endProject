@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!--website logo-->
+    <link rel="icon" href="images/favicon.png">
+    <!--links for font awesome-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--script for alert-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.0/dist/sweetalert2.all.min.js"></script>
+    <title>Quiz</title>
+    <!-- adding preloader -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+      $(window).load(function (){
+        $("body").css("overflow","auto");   
+        $('.loader .cssload-preloader').fadeOut(2000,
+          function()
+          {
+            $(this).parent().fadeOut(500);
+          
+        });
+      });
+    </script>
+  </head>
+  <body>
+    
+    <!--making header from here-->
+    <header>
+      <div class="headerContainer">
+        <div class="logo">
+          <a href="../index.html"
+            ><img
+              class="mylogo"
+              src="images/FE-schoolLogo.png"
+              alt="logo"
+          /></a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="../index.html">home</a></li>
+            <li><a href="../languages/language.html">languages</a></li>
+            <li><a href="quizs.html">quizs</a></li>
+            <li><a href="../projects/projects.html">projects</a></li>
+            <li><a href="../contact/contact.html">contact</a></li>
+          </ul>
+          <div class="burger">
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!--header end here-->
+
+    <!--making an introduction from here-->
+    <section id="about">
+      <div class="container">
+        <div class="grid">
+          <div class="left">
+            <img src="images/introductionImg.jpg" alt="myimage" />
+          </div>
+          <div class="right">
+            <h4>hey there !</h4>
+            <h2><span>FRONT</span>END SCHOOL</h2>
+            <h3>QUIZ</h3>
+            <p>
+              Multiple choice questions and answers (MCQs) on HTML/CSS/js to
+              prepare for exams, tests, and certifications. These questions are
+              taken from a real written exam and some parts are taken from an
+              interview. So you will find questions on basic techniques such as
+              tags, web standards, CSS selector, objects,functions and more. This quiz
+              will easily prepare anyone to pass their online test.
+            </p>
+            <a
+              href="https://en.wikipedia.org/wiki/Quiz"
+              target="_blank"
+              class="lbtn"
+              >Learn more</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--end introduction here-->
+
+    <!--start quiz here-->
+    <main>
+      <div class="quiz-container">
+        <div class="quiz">
+          <div class="choices">
+            <h2>an html document can contain</h2>
+            <form>
+              <input type="radio" name="choice1" id="quiz1choice1" />
+              <label for="quiz1choice1">attributes</label>
+              <br />
+              <input type="radio" name="choice1" id="quiz1choice2" />
+              <label for="quiz1choice2">tags</label>
+              <br />
+              <input type="radio" name="choice1" id="quiz1choice3" />
+              <label for="quiz1choice3">raw text</label>
+              <br />
+              <input
+                type="radio"
+                name="choice1"
+                id="quiz1choice4"
+                class="correct"
+              />
+              <label for="quiz1choice4">all the answers are true</label>
+              <div class="answerBtn">
+                <button class="showBtn" type="button">show answer</button>
+              </div>
+            </form>
+          </div>
+          <div class="answer">
+            <div class="choiceAnswer">
+              <p><span>✓</span>all the answers are true</p>
+            </div>
+            <div class="explain">
+              <p>
+                An HTML document can contain attributes, tags, and plain text.
+              </p>
+            </div>
+            <div class="explain-image">
+              <img
+                src="images/quizImages/image1.png"
+                alt="explain image"
+                style="width: 100%"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-container">
+        <div class="quiz">
+          <div class="choices">
+            <h2>A page designed in HTML is called</h2>
+            <form>
+              <input
+                type="radio"
+                name="choice2"
+                id="quiz2choice1"
+                class="correct"
+              />
+              <label for="quiz2choice1">web page</label>
+              <br />
+              <input type="radio" name="choice2" id="quiz2choice2" />
+              <label for="quiz2choice2">cover page</label>
+              <br />
+              <input type="radio" name="choice2" id="quiz2choice3" />
+              <label for="quiz2choice3">front-end</label>
+              <br />
+              <input type="radio" name="choice2" id="quiz2choice4" />
+              <label for="quiz2choice4">application</label>
+              <div class="answerBtn">
+                <button class="showBtn" type="button">show answer</button>
+              </div>
+            </form>
+          </div>
+          <div class="answer">
+            <div class="choiceAnswer">
+              <p><span>✓</span>web page</p>
+            </div>
+            <div class="explain">
+              <p>
+                A web page is a document typically written in Hypertext Markup
+                Language (HTML) that can be accessed over the Internet or other
+                networks using an Internet browser. A web page is accessed by
+                entering a URL address and can contain text, graphics, and
+                hyperlinks to other web pages and files. The page you are
+                currently reading is an example of a web page.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-container">
+        <div class="quiz">
+          <div class="choices">
+            <h2>The HTML document contains a root tag called</h2>
+            <form>
+              <input type="radio" name="choice3" id="quiz3choice1" />
+              <label for="quiz3choice1">head</label>
+              <br />
+              <input type="radio" name="choice3" id="quiz3choice2" />
+              <label for="quiz3choice2">title</label>
+              <br />
+              <input
+                type="radio"
+                name="choice3"
+                id="quiz3choice3"
+                class="correct"
+              />
+              <label for="quiz3choice3">html</label>
+              <br />
+              <input type="radio" name="choice3" id="quiz3choice4" />
+              <label for="quiz3choice4">body</label>
+              <div class="answerBtn">
+                <button class="showBtn" type="button">show answer</button>
+              </div>
+            </form>
+          </div>
+          <div class="answer">
+            <div class="choiceAnswer">
+              <p><span>✓</span>html</p>
+            </div>
+            <div class="explain">
+              <p>Here is an example of a simple HTML document:</p>
+            </div>
+            <div class="explain-image">
+              <img
+                src="images/quizImages/image3.png"
+                alt="explain image"
+                style="width: 100%"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-container">
+        <div class="quiz">
+          <div class="choices">
+            <h2>
+              If we want to place text around an image, which CSS property
+              should we use
+            </h2>
+            <form>
+              <input type="radio" name="choice4" id="quiz4choice1" />
+              <label for="quiz4choice1">push</label>
+              <br />
+              <input
+                type="radio"
+                name="choice4"
+                id="quiz4choice2"
+                class="correct"
+              />
+              <label for="quiz4choice2">float</label>
+              <br />
+              <input type="radio" name="choice4" id="quiz4choice3" />
+              <label for="quiz4choice3">align</label>
+              <br />
+              <input type="radio" name="choice4" id="quiz4choice4" />
+              <label for="quiz4choice4">wrap</label>
+              <div class="answerBtn">
+                <button class="showBtn" type="button">show answer</button>
+              </div>
+            </form>
+          </div>
+          <div class="answer">
+            <div class="choiceAnswer">
+              <p><span>✓</span>float</p>
+            </div>
+            <div class="explain">
+              <p>
+                The “float” property indicates that an item should be placed on
+                the right or left side of its container. Example:
+              </p>
+            </div>
+            <div class="explain-image">
+              <img
+                src="images/quizImages/image4.png"
+                alt="explain image"
+                style="width: 100%"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-container">
+        <div class="quiz">
+          <div class="choices">
+            <h2>How can you created rounded corners using CSS3</h2>
+            <form>
+              <input type="radio" name="choice5" id="quiz5choice1" />
+              <label for="quiz5choice1">border-round</label>
+              <br />
+              <input type="radio" name="choice5" id="quiz5choice2" />
+              <label for="quiz5choice2">corner-effect</label>
+              <br />
+              <input type="radio" name="choice5" id="quiz5choice3" />
+              <label for="quiz5choice3">alpha-effect</label>
+              <br />
+              <input
+                type="radio"
+                name="choice5"
+                id="quiz5choice4"
+                class="correct"
+              />
+              <label for="quiz5choice4">border-radius</label>
+              <div class="answerBtn">
+                <button class="showBtn" type="button">show answer</button>
+              </div>
+            </form>
+          </div>
+          <div class="answer">
+            <div class="choiceAnswer">
+              <p><span>✓</span>border-radius</p>
+            </div>
+            <div class="explain">
+              <p>example: border-radius: 10px;</p>
+            </div>
+            <div class="explain-image">
+              <img
+                src="images/quizImages/image5.png"
+                alt="explain image"
+                style="width: 100%"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-container">
+        <div class="quiz">
+          <div class="choices">
+            <h2>What does RGBa mean ?</h2>
+            <form>
+              <input type="radio" name="choice6" id="quiz6choice1" />
+              <label for="quiz6choice1"
+                >Review Get assistance Back-up your information acquire
+                proof</label
+              >
+              <br />
+              <input type="radio" name="choice6" id="quiz6choice2" />
+              <label for="quiz6choice2">Red Gray Brown alpha</label>
+              <br />
+              <input
+                type="radio"
+                name="choice6"
+                id="quiz6choice3"
+                class="correct"
+              />
+              <label for="quiz6choice3">Red Green Blue alpha</label>
+              <br />
+              <input type="radio" name="choice6" id="quiz6choice4" />
+              <label for="quiz6choice4">Red Gold Black alpha</label>
+              <div class="answerBtn">
+                <button class="showBtn" type="button">show answer</button>
+              </div>
+            </form>
+          </div>
+          <div class="answer">
+            <div class="choiceAnswer">
+              <p><span>✓</span>Red Green Blue alpha</p>
+            </div>
+            <div class="explain">
+              <p>
+                The RGB color model is an additive color model in which the red,
+                green, and blue primary colors of light are added together in
+                various ways to reproduce a broad array of colors.
+              </p>
+            </div>
+            <div class="explain-image">
+              <img
+                src="images/quizImages/image6.jpg"
+                alt="explain image"
+                style="width: 100%"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-container">
+        <div class="quiz">
+          <div class="choices">
+            <h2>which side javascript work</h2>
+            <form>
+              <input type="radio" name="choice7" id="quiz7choice1" />
+              <label for="quiz7choice1">Client</label>
+              <br />
+              <input type="radio" name="choice7" id="quiz7choice2" />
+              <label for="quiz7choice2">Server</label>
+              <br />
+              <input
+                type="radio"
+                name="choice7"
+                id="quiz7choice3"
+                class="correct"
+              />
+              <label for="quiz7choice3">Both</label>
+              <br />
+              <input type="radio" name="choice7" id="quiz7choice4" />
+              <label for="quiz7choice4">none</label>
+              <div class="answerBtn">
+                <button class="showBtn" type="button">show answer</button>
+              </div>
+            </form>
+          </div>
+          <div class="answer">
+            <div class="choiceAnswer">
+              <p><span>✓</span>both</p>
+            </div>
+            <div class="explain">
+              <p>
+                JavaScript is the dominant client-side scripting language of the
+                Web, with 97% of websites using it for this purpose. Scripts are
+                embedded in or included from HTML documents and interact with
+                the DOM also js has a runtime environement which is nodejs so it
+                can be in both side.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-container">
+        <div class="quiz">
+          <div class="choices">
+            <h2>Which of the following is correct</h2>
+            <form>
+              <input type="radio" name="choice8" id="quiz8choice1" />
+              <label for="quiz8choice1"> alertBox();</label>
+              <br />
+              <input
+                type="radio"
+                name="choice8"
+                id="quiz8choice2"
+                
+              />
+              <label for="quiz8choice2">display.alert();</label>
+              <br />
+              <input type="radio" name="choice8" id="quiz8choice3" />
+              <label for="quiz8choice3"> msgAlert();</label>
+              <br />
+              <input type="radio" name="choice8" id="quiz8choice4" class="correct" />
+              <label for="quiz8choice4">window.alert();</label>
+              <div class="answerBtn">
+                <button class="showBtn" type="button">show answer</button>
+              </div>
+            </form>
+          </div>
+          <div class="answer">
+            <div class="choiceAnswer">
+              <p><span>✓</span>window.alert</p>
+            </div>
+            <div class="explain">
+              <p>
+                alert method is on the window object so we can use
+                window.alert() or just alert(), example: alert("Hello");
+              </p>
+            </div>
+            <div class="explain-image">
+              <img
+                src="images/quizImages/image8.png"
+                alt="explain image"
+                style="width: 100%"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-container">
+        <div class="quiz">
+          <div class="choices">
+            <h2>How do you find the minimum of x and y using JavaScript?</h2>
+            <form>
+              <input type="radio" name="choice9" id="quiz9choice1" />
+              <label for="quiz9choice1"> min(x,y);</label>
+              <br />
+              <input
+                type="radio"
+                name="choice9"
+                id="quiz9choice2"
+                class="correct"
+              />
+              <label for="quiz9choice2">Math.min(x,y)</label>
+              <br />
+              <input type="radio" name="choice9" id="quiz9choice3" />
+              <label for="quiz9choice3"> Math.min(xy)</label>
+              <br />
+              <input type="radio" name="choice9" id="quiz9choice4" />
+              <label for="quiz9choice4"> min(xy);</label>
+              <div class="answerBtn">
+                <button class="showBtn" type="button">show answer</button>
+              </div>
+            </form>
+          </div>
+          <div class="answer">
+            <div class="choiceAnswer">
+              <p><span>✓</span>Math.min(x,y);</p>
+            </div>
+            <div class="explain">
+              <p>example: console.log(Math.min(10,5)) //output 5</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-container">
+        <div class="quiz">
+          <div class="choices">
+            <h2>
+              Which of the following statements will throw an error?
+            </h2>
+            <form>
+              <input type="radio" name="choice10" id="quiz10choice1" />
+              <label for="quiz10choice1"> var fun = function bar( ){ }</label>
+              <br />
+              <input type="radio" name="choice10" id="quiz10choice2" />
+              <label for="quiz10choice2"> var fun = () => {}</label>
+              <br />
+              <input type="radio" name="choice10" id="quiz10choice3" />
+              <label for="quiz10choice3"> function fun( ){ }</label>
+              <br />
+              <input
+                type="radio"
+                name="choice10"
+                id="quiz10choice4"
+                class="correct"
+              />
+              <label for="quiz10choice4"> function( ){ }</label>
+              <div class="answerBtn">
+                <button class="showBtn" type="button">show answer</button>
+              </div>
+            </form>
+          </div>
+          <div class="answer">
+            <div class="choiceAnswer">
+              <p><span>✓</span>function () {}</p>
+            </div>
+            <div class="explain">
+              <p>
+                we can't make a function without name execept the variable
+                function or the collback function
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="submit">
+        <button type="button" id="checkBtn">check answers</button>
+      </div>
+    </main>
+    <!--end quiz here-->
+
+    <!--start footer from here-->
+
+    <footer>
+      <div class="main-content">
+        <div class="left box">
+          <h2>About us</h2>
+          <div class="content">
+            <p>
+              Some information about the concepts of frontend school and their
+              goals and dreams
+            </p>
+            <div class="social">
+              <a href="#"><span class="fa fa-facebook"></span></a>
+              <a href="#"><span class="fa fa-google"></span></a>
+              <a href="#"><span class="fa fa-instagram"></span></a>
+              <a href="#"><span class="fa fa-linkedin"></span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="center box">
+          <h2>Address</h2>
+          <div class="content">
+            <div class="place">
+              <span class="fa fa-home"></span>
+              <strong class="text">casablanca , Morocco</strong>
+            </div>
+            <div class="phone">
+              <span class="fa fa-phone"></span>
+              <strong class="text">+2125XXXXXXX</strong>
+            </div>
+            <div class="email">
+              <span class="fa fa-envelope"></span>
+              <strong class="text">contact@info.com</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="right box">
+          <h2>Newsletter</h2>
+          <div class="content">
+            <form action="#">
+              <div class="email">
+                <label class="text">Email</label>
+                <input
+                  type="email"
+                  placeholder="Fill Your Email"
+                  title="merci de nous faire confiance"
+                  required
+                />
+              </div>
+              <div class="btn">
+                <button type="submit">subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright">
+      <span class="brand"> <span class="copy">&copy;</span> fe-sch</span>
+      <b>OOL</b>
+      &nbsp;
+      <span class="right">ALL right Reserved.</span>
+    </div>
+
+
+    <!--end footer here-->
+
+    <!--to the top button-->
+    <button id="myBtn" title="Go to top" class="buttonDown">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </button>
+    <!--end top button-->
+     <!-- preloader section -->
+     <section class="loader">
+      <div class="cssload-preloader">
+        <div class="cssload-preloader-box">
+          <div>F</div>
+          <div>R</div>
+          <div>O</div>
+          <div>N</div>
+          <div>T</div>
+          <div>E</div>
+        	<div>N</div>		
+          <div>D</div></div>
+      </div>
+       
+     </section>
+     <!--end preloader section-->
+    <script src="script.js"></script>
+  </body>
+</html>

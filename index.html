@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- meta for SEO -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- Fav icon -->
+    <link rel="shortcut icon" href="images/forIndexPage/favicon.png" type="image/x-icon">
+    <!--css file-->
+    <link rel="stylesheet" href="master.css" />
+    <!--Font-awesome icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>FE-School</title>
+    <!-- adding preloader -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+$(window).load(function (){
+  $("body").css("overflow","auto");   
+  $('.loader .cssload-preloader').fadeOut(2000,
+    function()
+    {
+      $(this).parent().fadeOut(500);
+    
+  });
+});
+</script>
+  </head>
+  <body>
+    <header>
+      <!--main header start-->
+      <div class="headerContainer">
+        <div class="logo">
+          <a href="index.html"
+            ><img
+              class="mylogo"
+              src="images/forIndexPage/FE-schoolLogo.png"
+              alt="logo"
+          /></a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="languages/language.html">languages</a></li>
+            <li><a href="quizs/quizs.html">quizs</a></li>
+            <li><a href="projects/projects.html">projects</a></li>
+            <li><a href="contact/contact.html">contact</a></li>
+          </ul>
+          <div class="burger">
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+          </div>
+        </nav>
+      </div>
+      <!--main header end-->
+    </header>
+    <!--starting the slider of header from here-->
+    <div class="slider">
+      <!--start myslider class(mySlider => content : images and text)-->
+      <div class="mySlider" style="display: block">
+        <div class="text fade">
+          <h2>what this website for ?</h2>
+          <p>
+            this website is for front-end developement<br />
+            you will learn all basics to build yourself
+          </p>
+        </div>
+        <div class="BtnContainer">
+          <a href="#about"
+            ><button type="button" class="sliderBtn">
+              <span></span>about us
+            </button>
+          </a>
+        </div>
+        <img
+          src="images/forIndexPage/sliderImages/img1.jpg"
+          alt="slider image one"
+          style="width: 100%; height: 100%"
+        />
+      </div>
+
+      <div class="mySlider">
+        <div class="text fade">
+          <h2>where to start ?</h2>
+          <p>
+            you can check the front-end roadmap<br />
+            and see that
+          </p>
+        </div>
+        <div class="BtnContainer">
+          <a href="#roadmap"
+            ><button type="button" class="sliderBtn">
+              <span></span>roadmap
+            </button>
+          </a>
+        </div>
+        <img
+          src="images/forIndexPage/sliderImages/img2.jpg"
+          alt="slider image two"
+          style="width: 100%; height: 100%"
+        />
+      </div>
+
+      <div class="mySlider">
+        <div class="text fade">
+          <h2>programming quotes</h2>
+          <p>some good programming quotes are below</p>
+        </div>
+        <div class="BtnContainer">
+          <a href="#quotes"
+            ><button type="button" class="sliderBtn">
+              <span></span>quotes
+            </button>
+          </a>
+        </div>
+        <img
+          src="images/forIndexPage/sliderImages/img3.jpg"
+          alt="slider image three"
+          style="width: 100%; height: 100%"
+        />
+      </div>
+
+      <div class="mySlider">
+        <div class="text fade">
+          <h2>level up your skills</h2>
+          <p>
+            then quiz section is your direction <br />
+            also we have some projects idea that you can make
+          </p>
+        </div>
+        <div class="BtnContainer">
+          <a href="#levelup"
+            ><button type="button" class="sliderBtn">
+              <span></span>level up
+            </button>
+          </a>
+        </div>
+        <img
+          src="images/forIndexPage/sliderImages/img4.jpg"
+          alt="slider image four"
+          style="width: 100%; height: 100%"
+        />
+      </div>
+      <!--end mySlider class-->
+      <a class="prev">&#10094;</a>
+      <a class="next">&#10095;</a>
+      <div class="dotsbox" style="text-align: center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+    <!--end the slider of header-->
+
+    <!--start introduction section from here-->
+    <section id="about">
+      <div class="container">
+        <div class="grid">
+          <div class="left">
+            <img src="images/forIndexPage/introductionImg.jpg" alt="myimage">
+          </div>
+          <div class="right">
+            <h4>hey there !</h4>
+            <h2><span>FRONT</span>END SCHOOL</h2>
+            <h3>WEB ACADEMY</h3>
+            <p>FRONT END web school is an online Academy offer a lot of services
+              for examples teatching consulting sell courses and more 
+              FRONT END web school is an online Academy offer a lot of services
+              for examples teatching consulting sell courses and more 
+              FRONT END web school is an online Academy offera lot of services
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Front_end" target="_blank" class="lbtn">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--end introduction here-->
+
+    <!--start roadmap section from here-->
+
+    <section id="roadmap">
+      <h2>roadmap</h2>
+      <div class="container">
+        <div class="timeline">
+          <ul>
+            <li>
+              <div class="timeline-content">
+                <h2>html</h2>
+                <div class="texts">
+                  <p>
+                    <span><i class="fa-solid fa-arrow-right"></i></span>learn
+                    the basics
+                  </p>
+                  <p>
+                    <span><i class="fa-solid fa-arrow-right"></i></span>writing
+                    semantic HTML
+                  </p>
+                  <p>
+                    <span><i class="fa-solid fa-arrow-right"></i></span>forms
+                    and validations
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-content">
+                <h2>css</h2>
+                <div class="texts">
+                  <p>
+                    <span><i class="fa-solid fa-arrow-right"></i></span>learn
+                    the basics
+                  </p>
+                  <p>
+                    <span><i class="fa-solid fa-arrow-right"></i></span>making
+                    layouts
+                  </p>
+                  <p>
+                    <span><i class="fa-solid fa-arrow-right"></i></span
+                    >responsive design and media queries
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-content">
+                <h2>javascript</h2>
+                <div class="texts">
+                  <p>
+                    <span><i class="fa-solid fa-arrow-right"></i></span>syntax
+                    and basic constructs
+                  </p>
+                  <p>
+                    <span><i class="fa-solid fa-arrow-right"></i></span>learn
+                    dom and bom
+                  </p>
+                  <p>
+                    <span><i class="fa-solid fa-arrow-right"></i></span>ES6+ and
+                    modular javascript
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-content">
+                <h2 style="line-height: 40px">frameworks & tools</h2>
+                <div class="texts">
+                  <p>
+                    <span><i class="fa-solid fa-arrow-right"></i></span>js
+                    framework like react angular...
+                  </p>
+                  <p>
+                    <span><i class="fa-solid fa-arrow-right"></i></span>css
+                    framework like bootstrap
+                  </p>
+                  <p>
+                    <span><i class="fa-solid fa-arrow-right"></i></span>git &
+                    github
+                  </p>
+                  <p>
+                    <span><i class="fa-solid fa-arrow-right"></i></span>keep
+                    learning
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!--end roadmap section here-->
+
+    <!--start quotes from here-->
+
+    <section id="quotes">
+      <h2>
+        <i class="fa-solid fa-quote-left"></i>quotes<i
+          class="fa-solid fa-quote-right"
+        ></i>
+      </h2>
+      <div class="container">
+        <div class="card">
+          <i class="fa-solid fa-quote-right"></i>
+          <blockquote>
+            Programming isn't about what you know; it's about what you can
+            figure out.
+          </blockquote>
+          <p>~ Chris Pine</p>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-quote-right"></i>
+          <blockquote>
+            The only way to learn a new programming language is by writing
+            programs in it.
+          </blockquote>
+          <p>~ Dennis Ritchie</p>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-quote-right"></i>
+          <blockquote>
+            Sometimes it's better to leave something alone, to pause, and that's
+            very true of programming.
+          </blockquote>
+          <p>~ Joyce Wheeler</p>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-quote-right"></i>
+          <blockquote>
+            In some ways, programming is like painting. You start with a blank
+            canvas and certain basic raw materials. You use a combination of
+            science, art, and craft to determine what to do with them.
+          </blockquote>
+          <p>~ Andrew Hunt</p>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-quote-right"></i>
+          <blockquote>
+            So if you want to go fast, if you want to get done quickly, if you
+            want your code to be easy to write, make it easy to read.
+          </blockquote>
+          <p>~ Robert C. Martin</p>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-quote-right"></i>
+          <blockquote>
+            Any fool can write code that a computer can understand. Good programmers write code that humans can understand.
+          </blockquote>
+          <p>~ Martin Fowler</p>
+        </div>
+      </div>
+    </section>
+
+    <!--end quotes here-->
+    <!-- start Levelup -->
+    <main id="levelup">
+      <section id="level">
+          <h2>level up</h2>
+      <div class="container">
+          <div class="card">
+            <div class="box">
+              <div class="content">
+                <h2>01</h2>
+                <h3>Html Quiz</h3>
+                <p>The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser</p>
+                <a href="https://en.wikipedia.org/wiki/HTML" target="_blank">Read More</a>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card">
+            <div class="box">
+              <div class="content">
+                <h2>02</h2>
+                <h3>CSS Quiz</h3>
+                <p>Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG).</p>
+                <a href="https://en.wikipedia.org/wiki/CSS" target="_blank">Read More</a>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card">
+            <div class="box">
+              <div class="content">
+                <h2>03</h2>
+                <h3>Js Projects</h3>
+                <p>Javascript (JS) is a scripting languages, primarily used on the Web. It is used to enhance HTML pages and is commonly found embedded in HTML code</p>
+                <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      
+      </section>
+  </main>
+    <!-- End levelup -->
+    <!-- start Footer     -->
+
+    <footer>
+      <div class="main-content">
+        <div class="left box">
+          <h2>About us</h2>
+          <div class="content">
+            <p>
+              Some information about the concepts of frontend school and their
+              goals and dreams
+            </p>
+            <div class="social">
+              <a href="#"><span class="fa fa-facebook"></span></a>
+              <a href="#"><span class="fa fa-google"></span></a>
+              <a href="#"><span class="fa fa-instagram"></span></a>
+              <a href="#"><span class="fa fa-linkedin"></span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="center box">
+          <h2>Address</h2>
+          <div class="content">
+            <div class="place">
+              <span class="fa fa-home"></span>
+              <strong class="text">casablanca , Morocco</strong>
+            </div>
+            <div class="phone">
+              <span class="fa fa-phone"></span>
+              <strong class="text">+2125XXXXXXX</strong>
+            </div>
+            <div class="email">
+              <span class="fa fa-envelope"></span>
+              <strong class="text">contact@info.com</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="right box">
+          <h2>Newsletter</h2>
+          <div class="content">
+            <form action="#">
+              <div class="email">
+                <label class="text">Email</label>
+                <input
+                  type="email"
+                  placeholder="Fill Your Email"
+                  title="merci de nous faire confiance"
+                  required
+                />
+              </div>
+              <div class="btn">
+                <button type="submit">subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright">
+      <span class="brand"> <span class="copy">&copy;</span> fe-sch</span>
+      <b>OOL</b>
+      &nbsp;
+      <span class="right">ALL right Reserved.</span>
+    </div>
+
+    <!--end footer here-->
+    <!-- to top button -->
+    <button id="myBtn" title="Go to top" class="buttonDown">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </button>
+    <!-- preloader section -->
+    <section class="loader">
+      <div class="cssload-preloader">
+        <div class="cssload-preloader-box">
+          <div>F</div>
+          <div>R</div>
+          <div>O</div>
+          <div>N</div>
+          <div>T</div>
+          <div>E</div>
+        	<div>N</div>		
+          <div>D</div></div>
+      </div>
+       
+     </section>
+    <script src="main.js"></script>
+  </body>
+</html>

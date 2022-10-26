@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#gameScreen {
+    position: relative;
+    left: 50px;
+    top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 306px;
+    height: 306px;
+    border: 2px solid black;
+}
+
+#gameScreen div {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    text-transform: uppercase;
+}
+
+.lines {
+    position: relative;
+    left: 50px;
+    top: -256px;
+    width: 306px;
+    height: 306px;
+    z-index: -999;
+}
+
+.line1 {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    top: 102px;
+    background-color: gray
+}
+
+.line2 {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    top: 204px;
+    background-color: gray
+}
+
+.line3 {
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    left: 102px;
+    top: 0;
+    background-color: gray
+}
+.line4 {
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    left: 204px;
+    top: 0;
+    background-color: gray
+}
+
+.xPlayer {
+    color: red;
+}
+
+.oPlayer {
+    color: green;
+}

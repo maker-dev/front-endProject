@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--css file-->
+    <link rel="stylesheet" href="master.css" />
+    <title>projects</title>
+    <!-- meta for SEO -->
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- Fav icon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <!--Font-awesome icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>FE-School</title>
+    <!-- adding preloader -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+      $(window).load(function () {
+        $("body").css("overflow", "auto");
+        $(".loader .cssload-preloader").fadeOut(2000, function () {
+          $(this).parent().fadeOut(500);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <!--main header start-->
+      <div class="headerContainer">
+        <div class="logo">
+          <a href="../index.html"
+            ><img class="mylogo" src="images/FE-schoolLogo.png" alt="logo"
+          /></a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="../index.html">home</a></li>
+            <li><a href="../languages/language.html">languages</a></li>
+            <li><a href="../quizs/quizs.html">quizs</a></li>
+            <li><a href="projects.html">projects</a></li>
+            <li><a href="../contact/contact.html">contact</a></li>
+          </ul>
+          <div class="burger">
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!--main header end-->
+
+    <!--making an introduction from here-->
+    <section id="about">
+      <div class="container">
+        <div class="grid">
+          <div class="left">
+            <img src="images/introductionImg.jpg" alt="introImg" />
+          </div>
+          <div class="right">
+            <h4>hey there !</h4>
+            <h2><span>FRONT</span>END SCHOOL</h2>
+            <h3>PROJECTS</h3>
+            <p>
+              If you’re interested in becoming a web developer, JavaScript is
+              one of the best coding languages you can learn. Getting familiar
+              with JavaScript basics means using those skills to build
+              JavaScript projects. Luckily, we know some fun JavaScript sample
+              projects and beginner projects you can do to hone your skills. 😉
+            </p>
+            <a
+              href="https://en.wikipedia.org/wiki/Code_Project"
+              target="_blank"
+              class="lbtn"
+              >Learn more</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--end introduction here-->
+
+    <!--starting the main section (cards)-->
+    <main>
+      <div class="container">
+        <div class="box">
+          <div class="face front">
+            <img
+              src="images/cardImg/tic_tac_toe.png"
+              alt="ticTacToeImg"
+              style="width: 100%; height: 100%; border-radius: 10px"
+            />
+          </div>
+          <div class="face back">
+            <h3>tic tac toe</h3>
+            <p>
+              noughts and crosses, or Xs and Os is a paper-and-pencil game for
+              two players who take turns marking the spaces in a three-by-three
+              grid with X or O. The player who succeeds in placing three of
+              their marks in a horizontal, vertical, or diagonal row is the
+              winner
+            </p>
+            <a href="allProject/tic-tac-toeJs/index.html" target="_blank"><button>check the project</button></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="face front">
+            <img
+              src="images/cardImg/calculator.png"
+              alt="calculatorImg"
+              style="width: 100%; height: 100%; border-radius: 10px"
+            />
+          </div>
+          <div class="face back">
+            <h3>calculator</h3>
+            <p>
+              An electronic calculator is typically a portable electronic device
+              used to perform calculations, ranging from basic arithmetic to
+              complex mathematics
+            </p>
+            <a href="allProject/jsSimpleCalculator/index.html" target="_blank"><button>check the project</button></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="face front">
+            <img
+              src="images/cardImg/passwordGenerator.png"
+              alt="calculatorImg"
+              style="width: 100%; height: 100%; border-radius: 10px"
+            />
+          </div>
+          <div class="face back">
+            <h3>password generator</h3>
+            <p>
+              A random password generator is software program or hardware device
+              that takes input from a random or pseudo-random number generator
+              and automatically generates a password. Random passwords can be
+              generated manually, using simple sources of randomness such as
+              dice or coins, or they can be generated using a computer.
+            </p>
+            <a href="#" target="_blank"><button>check the project</button></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="face front">
+            <img
+              src="images/cardImg/crypting.jpg"
+              alt="calculatorImg"
+              style="width: 100%; height: 100%; border-radius: 10px"
+            />
+          </div>
+          <div class="face back">
+            <h3>Encryption</h3>
+            <p>
+              In cryptography, encryption is the process of encoding
+              information. This process converts the original representation of
+              the information, known as plaintext, into an alternative form
+              known as ciphertext. Ideally, only authorized parties can decipher
+              a ciphertext back to plaintext and access the original
+              information.
+            </p>
+            <a href="#" target="_blank"><button>check the project</button></a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--end the main section-->
+
+    <!-- start Footer     -->
+
+    <footer>
+      <div class="main-content">
+        <div class="left box">
+          <h2>About us</h2>
+          <div class="content">
+            <p>
+              Some information about the concepts of frontend school and their
+              goals and dreams
+            </p>
+            <div class="social">
+              <a href="#"><span class="fa fa-facebook"></span></a>
+              <a href="#"><span class="fa fa-google"></span></a>
+              <a href="#"><span class="fa fa-instagram"></span></a>
+              <a href="#"><span class="fa fa-linkedin"></span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="center box">
+          <h2>Address</h2>
+          <div class="content">
+            <div class="place">
+              <span class="fa fa-home"></span>
+              <strong class="text">casablanca , Morocco</strong>
+            </div>
+            <div class="phone">
+              <span class="fa fa-phone"></span>
+              <strong class="text">+2125XXXXXXX</strong>
+            </div>
+            <div class="email">
+              <span class="fa fa-envelope"></span>
+              <strong class="text">contact@info.com</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="right box">
+          <h2>Newsletter</h2>
+          <div class="content">
+            <form action="#">
+              <div class="email">
+                <label class="text">Email</label>
+                <input
+                  type="email"
+                  placeholder="Fill Your Email"
+                  title="merci de nous faire confiance"
+                  required
+                />
+              </div>
+              <div class="btn">
+                <button type="submit">subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright">
+      <span class="brand"> <span class="copy">&copy;</span> fe-sch</span>
+      <b>OOL</b>
+      &nbsp;
+      <span class="right">ALL right Reserved.</span>
+    </div>
+
+    <!--end footer here-->
+    <!-- to top button -->
+    <button id="myBtn" title="Go to top" class="buttonDown">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </button>
+    <!-- preloader section -->
+    <section class="loader">
+      <div class="cssload-preloader">
+        <div class="cssload-preloader-box">
+          <div>F</div>
+          <div>R</div>
+          <div>O</div>
+          <div>N</div>
+          <div>T</div>
+          <div>E</div>
+          <div>N</div>
+          <div>D</div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

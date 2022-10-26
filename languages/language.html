@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--Font-awesome icons-->
+     <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+   />
+   <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+     integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+     crossorigin="anonymous"
+     referrerpolicy="no-referrer"
+   />
+   <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+   />
+       <!-- Fav icon -->
+    <link rel="stylesheet" href="language.css">
+    <link rel="shortcut icon" href="../images/forIndexPage/favicon.png" type="image/x-icon">
+    <title>Languages</title>
+
+    <!-- jquery script for preloader -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script>
+  $(window).load(function (){
+    $("body").css("overflow","auto");   
+    $('.loader .cssload-preloader').fadeOut(2000,
+      function()
+      {
+        $(this).parent().fadeOut(500);
+      
+    });
+  });
+  </script>
+   
+</head>
+<body> 
+
+  <header>
+    <span id="message" class="alert"></span>
+    <!--main header start-->
+    <div class="headerContainer">
+      <div class="logo">
+        <a href="../index.html"
+          ><img
+            class="mylogo"
+            src="../images/forIndexPage/FE-schoolLogo.png"
+            alt="logo"
+        /></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">home</a></li>
+          <li><a href="../languages/language.html">languages</a></li>
+          <li><a href="../quizs/quizs.html">quizs</a></li>
+          <li><a href="../projects/projects.html">projects</a></li>
+          <li><a href="../contact/contact.html">contact</a></li>
+        </ul>
+        <div class="burger">
+          <span class="line1"></span>
+          <span class="line2"></span>
+          <span class="line3"></span>
+        </div>
+      </nav>
+    </div>
+    <!--main header end-->
+  </header>
+<section>
+
+<h2>LANGUAGES</h2>
+<div class="cards">
+  <div class="card">
+    <h2 class="card-title">HTML</h2>
+    <img src="images/html2.png" alt="html_image">
+    <p class="card-desc">The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.<br>
+      <span>
+        <button id="btn">Download</button>
+       </span>
+    </p>
+  </div>
+  <div class="card">
+    <h2 class="card-title">CSS</h2>
+    <img src="images/csss.png" alt="css_image">
+    <p class="card-desc">Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.<br>
+      <span>
+        <button id="btn2">Download</button>
+       </span>
+    </p>
+  </div>
+  <div class="card">
+    <h2 class="card-title">JavaScript</h2>
+    <img src="images/js.png" alt="JavaScript_image">
+    <p class="card-desc">JavaScript often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. Over 97% of websites use JavaScript on the client side for web page behavior<br>
+       <span>
+      <button id="btn3">Download</button>
+     </span>
+    </p>
+   
+    
+    
+  </div>
+</div>
+</section>
+<footer>
+  <div class="main-content">
+    <div class="left box">
+      <h2>About us</h2>
+      <div class="content">
+        <p>
+          Some information about the concepts of frontend school and their
+          goals and dreams
+        </p>
+        <div class="social">
+          <a href="#"><span class="fa fa-facebook"></span></a>
+          <a href="#"><span class="fa fa-google"></span></a>
+          <a href="#"><span class="fa fa-instagram"></span></a>
+          <a href="#"><span class="fa fa-linkedin"></span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="center box">
+      <h2>Address</h2>
+      <div class="content">
+        <div class="place">
+          <span class="fa fa-home"></span>
+          <strong class="text">casablanca , Morocco</strong>
+        </div>
+        <div class="phone">
+          <span class="fa fa-phone"></span>
+          <strong class="text">+2125XXXXXXX</strong>
+        </div>
+        <div class="email">
+          <span class="fa fa-envelope"></span>
+          <strong class="text">contact@info.com</strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="right box">
+      <h2>Newsletter</h2>
+      <div class="content">
+        <form action="#">
+          <div class="email">
+            <label class="text">Email</label>
+            <input
+              type="email"
+              placeholder="Fill Your Email"
+              title="merci de nous faire confiance"
+              required
+            />
+          </div>
+          <div class="btnn">
+            <button type="submit" >subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="copyright">
+  <span class="brand"> <span class="copy">&copy;</span> fe-sch</span>
+  <b>OOL</b>
+  &nbsp;
+  <span class="right">ALL right Reserved.</span>
+</div>
+
+
+<!--end footer here-->
+<!-- to top button -->
+<button id="myBtn" title="Go to top" class="buttonDown">
+  <i class="fa fa-arrow-up" aria-hidden="true"></i>
+</button>
+<!-- preloader section -->
+<section class="loader">
+  <div class="cssload-preloader">
+    <div class="cssload-preloader-box">
+      <div>F</div>
+      <div>R</div>
+      <div>O</div>
+      <div>N</div>
+      <div>T</div>
+      <div>E</div>
+      <div>N</div>		
+      <div>D</div></div>
+  </div>
+
+
+
+
+<script>
+  let btn1 = document.querySelector("#btn");
+  let btn2 = document.querySelector("#btn2");
+  let btn3 = document.querySelector("#btn3");
+  let message = document.querySelector("#message");
+
+let a=11;
+  function timer(){
+     let t=setInterval(()=>{
+       a--;
+       message.classList.remove("alert");
+       
+       message.innerHTML=`<i class="fa-solid fa-download" style='color:white;'></i> The Download will start in <span style='color:rgb(24, 151, 224);''>${a}</span> Seconds`;
+
+       if(a<=0){
+        window.location.href="pdfs/html.pdf";
+        clearInterval(t);
+        setTimeout(()=>{
+          message.style.display="none";
+        },5000)
+        
+       
+     }
+     },1000)
+  }
+   btn1.onclick=()=>{
+     timer();
+     
+   };
+   function timer2(){
+     let t=setInterval(()=>{
+       a--;
+       message.classList.remove("alert");
+       
+       message.innerHTML=`<i class="fa-solid fa-download" style='color:white;'></i> The Download will start in <span style='color:rgb(24, 151, 224);''>${a}</span> Seconds`;
+       if(a<=0){
+        window.location.href="pdfs/CSS.pdf";
+        clearInterval(t);
+        setTimeout(()=>{
+          message.style.display="none";
+        },5000)
+       
+     }
+     },1000)
+  }
+   btn2.onclick=()=>{
+     timer2();
+    
+     
+   }   
+   function timer3(){
+     let t=setInterval(()=>{
+       a--;
+       message.classList.remove("alert");
+       
+       message.innerHTML=`<i class="fa-solid fa-download" style='color:white;'></i> The Download will start in <span style='color:rgb(24, 151, 224);''>${a}</span> Seconds`;
+       if(a<=0){
+        window.location.href="pdfs/js.pdf";
+        clearInterval(t);
+        setTimeout(()=>{
+          message.style.display="none";
+        },5000)
+       
+     }
+     },1000)
+  }
+   btn3.onclick=()=>{
+     timer3();
+    
+     
+   }   
+
+
+
+
+
+
+
+
+
+
+
+
+//!changing header when scrolling
+
+let header = document.querySelector(".headerContainer");
+let links = document.querySelectorAll("header .headerContainer nav ul li a");
+let logo = document.querySelector(".mylogo");
+
+
+window.onscroll = function () {
+  if (window.scrollY > 0) {
+    header.style.backgroundColor = "rgb(228, 230, 231)";//---I changed background_color from blue to whitegrey---//
+    //-----on scroll Links will colored with black-----//
+    links.forEach(function(elm){
+      elm.style.color="rgb(100, 95, 95)";
+    });
+   logo.style.filter="grayscale(0%)"; //color blue for logo
+
+
+
+  } else {
+    header.style.backgroundColor = "transparent";
+    links.forEach(function(elm){
+      //-----Links will colored with WHite-----//
+      elm.style.color="white";
+      
+    });
+    logo.style.filter="grayscale(80%)"; //color grey&black for logo
+
+   
+  };
+};
+
+//!changing header when scrolling end
+
+//!burger activation
+const myBuger = document.querySelector(".burger");
+const mylinesBurger = document.querySelectorAll(".burger span");
+const myUlofBurger = document.querySelector("header nav ul");
+const allLinks = document.querySelectorAll("header nav ul li a");
+
+myBuger.addEventListener("click",function () {
+  myUlofBurger.classList.toggle("burgerActive");
+  if (myUlofBurger.classList.contains("burgerActive")) {
+    mylinesBurger[1].style.opacity = "0";
+    mylinesBurger[0].style.transform = "translateY(8px) rotate(45deg)";
+    mylinesBurger[2].style.transform = "translateY(-8px) rotate(-45deg)";
+  } else {
+    mylinesBurger[1].style.opacity = "";
+    mylinesBurger[0].style.transform = "";
+    mylinesBurger[2].style.transform = "";
+  }
+})
+
+allLinks.forEach(link => {//this check if you click a link while the burger is active (remove the activation)
+  link.addEventListener("click",function () {
+    if (myUlofBurger.classList.contains("burgerActive")) {
+      myUlofBurger.classList.remove("burgerActive");
+      mylinesBurger[1].style.opacity = "";
+      mylinesBurger[0].style.transform = "";
+      mylinesBurger[2].style.transform = "";
+    }
+  })
+})
+//!burger activation end here
+
+//!scroll button start from here
+//-------To Top button--------//
+//Get the button:
+let mybutton = document.getElementById("myBtn");
+
+window.addEventListener("scroll",function () {
+  if (window.scrollY < 200) {
+    mybutton.style.display = "none";
+  } else {
+    mybutton.style.display = "block";
+  }
+}) 
+//click event for scrolling to top
+mybutton.addEventListener("click",function () {
+  window.scrollTo({
+    top: 0
+  })
+})
+//!scroll button end 
+
+
+ 
+
+
+
+</script>
+</body>
+</html>

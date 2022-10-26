@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <!-- icons -->
+    <link rel="icon" href="../images/forIndexPage/favicon.png">
+    <script
+    src="https://kit.fontawesome.com/64d58efce2.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- adding preloader -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script>
+  $(window).load(function (){
+    $("body").css("overflow","auto");   
+    $('.loader .cssload-preloader').fadeOut(2000,
+      function()
+      {
+        $(this).parent().fadeOut(500);
+      
+    });
+  });
+  </script>
+    <title>Contact</title>
+</head>
+<body>
+  <header>
+    <!--main header start-->
+    <div class="headerContainer">
+      <div class="logo">
+        <a href="../index.html"
+          ><img
+            class="mylogo"
+            src="../images/forIndexPage/FE-schoolLogo.png"
+            alt="logo"
+        /></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">home</a></li>
+          <li><a href="../languages/language.html">languages</a></li>
+          <li><a href="../quizs/quizs.html">quizs</a></li>
+          <li><a href="../projects/projects.html">projects</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+        <div class="burger">
+          <span class="line1"></span>
+          <span class="line2"></span>
+          <span class="line3"></span>
+        </div>
+      </nav>
+    </div>
+    <!--main header end-->
+  </header>
+    <div class="container">
+        <span class="big-circle"></span>
+        <div class="form">
+          <div class="contact-info">
+            <h3 class="title">Let's get in touch</h3>
+            <p class="text">
+              hello
+              my name is anas draiaf and i'created this website with my friend omar choukat
+              we would like to discuss about this project with you
+            </p>
+  
+            <div class="info">
+              <div class="information">
+                <img src="img_con/location.png" style="filter:contrast(0%);" class="icon" alt="" />
+                <p>Casablanca Morocco, California 11553</p>
+              </div>
+              <div class="information">
+                <img src="img_con/email.png" style="filter:contrast(0%);" class="icon" alt="" />
+                <p>FE.school@gmail.com</p>
+              </div>
+              <div class="information">
+                <img src="img_con/phone.png" style="filter:contrast(0%);" class="icon" alt="" />
+                <p>+212 XXXXXXXXXX</p>
+              </div>
+            </div>
+  
+            <div class="social-media">
+              <p>Connect with us :</p>
+              <div class="social-icons">
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="contact-form">
+            <span class="circle one"></span>
+            <span class="circle two"></span>
+  
+            <form>
+              <h3 class="title">Contact us</h3>
+              <div class="input-container">
+                <input type="text" name="name" class="input" />
+                <label for="">Full Name</label>
+                <span>Username</span>
+              </div>
+              <div id="invaliduser"></div>
+              <div class="input-container">
+                <input type="email" name="email" class="input" />
+                <label for="">Email</label>
+                <span>Email</span>
+              </div>
+              <div id="invaidmail"></div>
+              <div class="input-container">
+                <input type="tel" name="phone" id="ph" class="input" />
+                <label for="">Phone</label>
+                <span>Phone</span>
+              </div>
+              <div id="input-container"></div>
+              <div class="input-container textarea">
+                <textarea name="message" class="input"></textarea>
+                <label for="">Message</label>
+                <span>Message</span>
+              </div>
+              <input type="submit" value="Send Message" class="btn" />
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <footer>
+        <div class="main-content">
+          <div class="left box">
+            <h2>About us</h2>
+            <div class="content">
+              <p>
+                Some information about the concepts of frontend school and their
+                goals and dreams
+              </p>
+              <div class="social">
+                <a href="#"><span class="fa fa-facebook"></span></a>
+                <a href="#"><span class="fa fa-google"></span></a>
+                <a href="#"><span class="fa fa-instagram"></span></a>
+                <a href="#"><span class="fa fa-linkedin"></span></a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="center box">
+            <h2>Address</h2>
+            <div class="content">
+              <div class="place">
+                <span class="fa fa-home"></span>
+                <strong class="text">casablanca , Morocco</strong>
+              </div>
+              <div class="phone">
+                <span class="fa fa-phone"></span>
+                <strong class="text">+2125XXXXXXX</strong>
+              </div>
+              <div class="email">
+                <span class="fa fa-envelope"></span>
+                <strong class="text">contact@info.com</strong>
+              </div>
+            </div>
+          </div>
+  
+          <div class="right box">
+            <h2>Newsletter</h2>
+            <div class="content">
+              <form action="#">
+                <div class="email">
+                  <label class="text">Email</label>
+                  <input
+                    type="email"
+                    placeholder="Fill Your Email"
+                    title="merci de nous faire confiance"
+                    required
+                  />
+                </div>
+                <div class="btnn">
+                  <button type="submit" >subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="copyright">
+        <span class="brand"> <span class="copy">&copy;</span> fe-sch</span>
+        <b>OOL</b>
+        &nbsp;
+        <span class="right">ALL right Reserved.</span>
+      </div>
+
+  
+      <!--end footer here-->
+      <!-- to top button -->
+      <button id="myBtn" title="Go to top" class="buttonDown">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+      </button>
+      <!-- preloader section -->
+      <section class="loader">
+        <div class="cssload-preloader">
+          <div class="cssload-preloader-box">
+            <div>F</div>
+            <div>R</div>
+            <div>O</div>
+            <div>N</div>
+            <div>T</div>
+            <div>E</div>
+            <div>N</div>		
+            <div>D</div></div>
+        </div>
+     
+         
+       </section>
+     
+  
+      
+      <script src="app.js"></script>
+    
+    
+</body>
+</html>
